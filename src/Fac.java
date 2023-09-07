@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 
 public class Fac {
-  	private static BigInteger fac(int n) {
+  	static BigInteger fac(int n) {
 		// Takes an integer, n, and returns n! as a BigInteger, returns -1 if input is invalid
 		// Out of range error handling
 		if (0 > n || n > Integer.MAX_VALUE) {

@@ -1,12 +1,9 @@
 // Instructions say to name this file Assn2, gradle instructions say to name it Assn2Main
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import Fib.fib;
-import Fac.fac;
-import E.e;
 
 
-class Assign1 {
+class Assn2 {
 	private static boolean parseCmd(String cmdString, String nString) {
 		try {
 			int n = Integer.parseInt(nString);
@@ -22,21 +19,21 @@ class Assign1 {
 		int n = Integer.parseInt(nString);
 		switch (cmdString) {
 			case "-fib": 
-				int fibAnswer = fib(n);
+				int fibAnswer = Fib.fib(n);
 				if (fibAnswer == INT_ERROR) {
 					break;
 				}
 				System.out.println("Fibonacci of " + nString + " is " + fibAnswer);
 				break;
 			case "-fac": 
-				BigInteger facAnswer = fac(n);
+				BigInteger facAnswer = Fac.fac(n);
 				if (facAnswer.equals(BIG_INTEGER_ERROR)) {
 					break;
 				}
 				System.out.println("Factorial of " + nString + " is " + facAnswer.toString());
 				break;
 			case "-e": 
-				BigDecimal eAnswer = e(n);
+				BigDecimal eAnswer = E.e(n);
 				if (eAnswer.equals(BIG_DECIMAL_ERROR)) {
 					break;
 				}
